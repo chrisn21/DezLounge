@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "LoginForm";
+}
+
+<link rel="stylesheet" href="/Content/css/login.css">
+
+<div class="row">
+    <div class="small-12 columns">
+        <h3><small><p class="loginHeaderText">Welcome to DezCrew's Main Lounge!</p></small></h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="small-12 columns">
+        <h4><small><p class="loginHeaderText">Please enter your lounge credentials below:</p></small></h4>
+    </div>
+</div>
+
+<div class="row">
+    <div id="loginForm" class="large-8 columns">
+        <form ng-controller="LoginController" ng-submit="returnCredentials()">
+            <label>
+                <input type="text" ng-model="email" placeholder="Email" />
+                <input type="text" ng-model="user" placeholder="Username" />
+                <input type="password" ng-model="password" placeholder="Password" />
+                <input class="button secondary" type="submit" value="Submit" />
+            </label>
+        </form>
+    </div>
+    <div id="loginMascot" class="large-4 columns">
+        <img src="/Content/img/foundationyeti.png" alt="Foundation Yeti 01" />
+    </div>
+</div>
+
